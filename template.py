@@ -5,14 +5,17 @@ dirs = [
     os.path.join("data", "processed"),
     "notebooks",
     "saved_models",
-    "src"
+    "src",
+    "reports"
 ]
 
 files = [
     "dvc.yaml",
     "params.yaml",
     ".gitignore",
-    os.path.join("src", "__init__.py")
+    os.path.join("src", "__init__.py"),
+    "params.json",
+    "scores.json"
 ]
 
 for dir_ in dirs:
