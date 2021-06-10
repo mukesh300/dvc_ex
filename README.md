@@ -33,3 +33,28 @@ git add .
 
 git commit -m "initial commit"
 ```
+
+tox command -
+```bash
+tox
+```
+for rebuilding
+```bash
+tox -r
+```
+
+pytest command -
+```bash
+pytest -v
+```
+
+setup commands -
+installing local packages
+```bash
+pip install -e . 
+```
+
+to build your own package
+```bash
+python setup.py sdist bdist_wheel
+```
