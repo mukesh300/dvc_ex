@@ -32,7 +32,7 @@ def predict(data):
     config = read_params(params_path)
     model_dir_path = config["webapp_model_dir"]
     model = joblib.load(model_dir_path)
-    prediction = model.predict(data).to_list()[0]
+    prediction = list(model.predict(data))[0]
     try:
         if 3 <= prediction <= 8:
             return prediction
