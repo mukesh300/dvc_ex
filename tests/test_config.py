@@ -1,4 +1,6 @@
 import pytest
+
+import prediction_service
 from prediction_service.prediction import form_response, api_response
 
 input_data = {
