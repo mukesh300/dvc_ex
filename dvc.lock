@@ -42,19 +42,9 @@ stages:
       md5: 4bccf4d668cdc60115de42ba74d416ab
       size: 73633
     - path: src/train_and_evaluate.py
-      md5: 7e5d41b6d1d7b356c8be1561e0c778e9
-      size: 2455
+      md5: 0dfe118df0cc5248cc5153277b5cea1e
+      size: 3451
     params:
       params.yaml:
         estimators.ElasticNet.params.alpha: 0.9
         estimators.ElasticNet.params.l1_ratio: 0.4
-    outs:
-    - path: reports/params.json
-      md5: 86524820870673b16aeaa90890571e40
-      size: 97
-    - path: reports/scores.json
-      md5: a4aab0167612f21a6085dd05cfafdbf6
-      size: 41
-    - path: saved_models/model.joblib
-      md5: 60a953814f3419ca564da49ae11e7efa
-      size: 693
